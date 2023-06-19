@@ -1,7 +1,7 @@
 /*
  * @Author       : young
  * @Date         : 2023-06-15 03:06:10
- * @LastEditTime : 2023-06-19 09:06:02
+ * @LastEditTime : 2023-06-19 09:08:39
  */
 #include <iostream>
 #include <cstring>
@@ -30,8 +30,6 @@ void solve() {
 
     for (int i = 1; i <= n; i ++ ) {
         l[0][i] = i;
-    }
-    for (int i = 1; i <= n; i ++ ) {
         r[m + 1][i] = i;
     }
 
