@@ -58,6 +58,7 @@ void solve() {
         auto left = l[ll - 1], right = r[rr + 1];
         for (int i = 1; i <= n; i ++ ) {
             int pa = find(i, left), pb = find(i, right);
+            // 如果本来就在同一个连通块里，没有必要重复合并
             if (find(pa, left) != find(pb, left)) {
                 left[pa] = pb;
             }
